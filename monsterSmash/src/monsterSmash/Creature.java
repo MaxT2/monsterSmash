@@ -6,12 +6,12 @@ public class Creature {
 	
 
 	private String name;
-	private short healthStat;
-	private short physicalAttackStat;
-	private short energyAttackStat;
-	private short physicalDefenseStat; 
-	private short energyDefenseStat;
-	private short speedStat; 
+	private int healthStat;
+	private int physicalAttackStat;
+	private int energyAttackStat;
+	private int physicalDefenseStat; 
+	private int energyDefenseStat;
+	private int speedStat; 
 
 
 	public Creature(){
@@ -19,7 +19,7 @@ public class Creature {
 		
 	}
 	
-	public Creature(String tempName,short health, short physAtk, short enAtk, short phyDef, short enDef, short speed ){
+	public Creature(String tempName,int health, int physAtk, int enAtk, int phyDef, int enDef, int speed ){
 		
 		this.name = tempName;
 		this.healthStat = health;
@@ -31,58 +31,48 @@ public class Creature {
 		
 	}
 	
-	public Creature(String tempName,int health, int physAtk, int enAtk, int phyDef, int enDef, int speed ){
-	
-		this.name = tempName;
-		this.healthStat = (short) health;
-		this.physicalAttackStat = (short) physAtk;
-		this.energyAttackStat = (short) enAtk;
-		this.physicalDefenseStat = (short) phyDef;
-		this.energyDefenseStat = (short) enDef;
-		this.speedStat = (short) speed;
-	}	
-public short getHealthStat() {
+public int getHealthStat() {
 	return healthStat;
 }
-public void setHealthStat(short healthStat) {
+public void setHealthStat(int healthStat) {
 	this.healthStat = healthStat;
 }
-public short getPhysicalAttackStat() {
+public int getPhysicalAttackStat() {
 	return physicalAttackStat;
 }
-public void setPhysicalAttackStat(short physicalAttackStat) {
+public void setPhysicalAttackStat(int physicalAttackStat) {
 	this.physicalAttackStat = physicalAttackStat;
 }
-public short getEnergyAttackStat() {
+public int getEnergyAttackStat() {
 	return energyAttackStat;
 }
-public void setEnergyAttackStat(short energyAttackStat) {
+public void setEnergyAttackStat(int energyAttackStat) {
 	this.energyAttackStat = energyAttackStat;
 }
-public short getPhysicalDefenseStat() {
+public int getPhysicalDefenseStat() {
 	return physicalDefenseStat;
 }
-public void setPhysicalDefenseStat(short physicalDefenseStat) {
+public void setPhysicalDefenseStat(int physicalDefenseStat) {
 	this.physicalDefenseStat = physicalDefenseStat;
 }
-public short getEnergyDefenseStat() {
+public int getEnergyDefenseStat() {
 	return energyDefenseStat;
 }
-public void setEnergyDefenseStat(short energyDefenseStat) {
+public void setEnergyDefenseStat(int energyDefenseStat) {
 	this.energyDefenseStat = energyDefenseStat;
 }
-public short getSpeedStat() {
+public int getSpeedStat() {
 	return speedStat;
 }
-public void setSpeedStat(short speedStat) {
+public void setSpeedStat(int speedStat) {
 	this.speedStat = speedStat;
 }
 
 
 // method to return an array of all creature stats
-public Short[] getAllStats(){
+public int[] getAllStats(){
 	
-	return new Short[]{healthStat,physicalAttackStat,energyAttackStat,physicalDefenseStat,energyDefenseStat,speedStat };
+	return new int[]{healthStat,physicalAttackStat,energyAttackStat,physicalDefenseStat,energyDefenseStat,speedStat };
 	
 }
 
