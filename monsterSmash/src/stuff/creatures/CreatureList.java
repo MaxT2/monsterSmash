@@ -16,4 +16,28 @@ public class CreatureList {
 	waterBuffalo = new Creature("Water Buffalo", 100, 100, 15, 0, 30, 30, 85);
 	
 	}
+
+
+
+	public Creature getFireBob() {
+		return fireBob;
+	}
+
+
+
+	public void setFireBob(Creature fireBob) {
+		this.fireBob = fireBob;
+	}
+
+
+
+	public Creature getWaterBuffalo() {
+		return waterBuffalo;
+	}
+
+
+
+	public void setWaterBuffalo(Creature waterBuffalo) {
+		this.waterBuffalo = waterBuffalo;
+	}
 }
