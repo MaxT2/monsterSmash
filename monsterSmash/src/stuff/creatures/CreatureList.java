@@ -12,8 +12,8 @@ public class CreatureList {
 	
 	public CreatureList(){
 	
-	fireBob = new Creature("Fire Bob", 100, 100, 10, 0, 50, 50, 75);
-	waterBuffalo = new Creature("Water Buffalo", 100, 100, 15, 0, 30, 30, 85);
+	fireBob = new Creature("Fire Bob", 100, 100, 10, 1, 50, 50, 75);
+	waterBuffalo = new Creature("Water Buffalo", 100, 100, 15, 1, 30, 30, 85);
 	
 	}
 
