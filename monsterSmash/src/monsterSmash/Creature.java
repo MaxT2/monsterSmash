@@ -4,6 +4,8 @@ package monsterSmash;
 
 public class Creature {
 	
+
+	private String name;
 	private short healthStat;
 	private short physicalAttackStat;
 	private short energyAttackStat;
@@ -17,8 +19,9 @@ public class Creature {
 		
 	}
 	
-	public Creature(short health, short physAtk, short enAtk, short phyDef, short enDef, short speed ){
+	public Creature(String tempName,short health, short physAtk, short enAtk, short phyDef, short enDef, short speed ){
 		
+		this.name = tempName;
 		this.healthStat = health;
 		this.physicalAttackStat = physAtk;
 		this.energyAttackStat = enAtk;
@@ -65,5 +68,22 @@ public void setSpeedStat(short speedStat) {
 	this.speedStat = speedStat;
 }
 
+
+// method to return an array of all creature stats
+public Short[] getAllStats(){
 	
+	return new Short[]{healthStat,physicalAttackStat,energyAttackStat,physicalDefenseStat,energyDefenseStat,speedStat };
+	
+}
+
+// to string method for printing out creature stats
+
+public String toString(){
+	return name + "'s stats:\n" + "Health: " + healthStat + "\nPhysical Attack: " + physicalAttackStat + "\nEnergy Attack: " + energyAttackStat + 
+			"\nPhysical Defense: " + physicalDefenseStat + "\nEelectttric Defense " + energyDefenseStat + "\n Speed Stat " + speedStat;
+
+	
+}
+
+
 }
