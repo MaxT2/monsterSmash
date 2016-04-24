@@ -11,5 +11,9 @@ public static void main(String []args){
 	TristensPlayspace tSpace = new TristensPlayspace();
 	tSpace.tTest();
 	
+	// create object form Scott's playspace and run test method
+	ScottsPlayspace sSpace = new ScottsPlayspace();
+	sSpace.sTest();
+	
 }
 }

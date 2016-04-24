@@ -2,14 +2,14 @@ package monsterSmash;
 //Object to create for each battle
 
 public class BattleInstance {
-private Weather conditions;
+private Weather condition;
 
-public Weather getConditions() {
-	return conditions;
+public Weather getCondition() {
+	return condition;
 }
 
-public void setConditions(Weather conditions) {
-	this.conditions = conditions;
+public void setCondition(Weather condition) {
+	this.condition = condition;
 }
 
 }
