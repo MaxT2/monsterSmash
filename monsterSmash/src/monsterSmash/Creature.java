@@ -31,6 +31,16 @@ public class Creature {
 		
 	}
 	
+	public Creature(String tempName,int health, int physAtk, int enAtk, int phyDef, int enDef, int speed ){
+	
+		this.name = tempName;
+		this.healthStat = (short) health;
+		this.physicalAttackStat = (short) physAtk;
+		this.energyAttackStat = (short) enAtk;
+		this.physicalDefenseStat = (short) phyDef;
+		this.energyDefenseStat = (short) enDef;
+		this.speedStat = (short) speed;
+	}	
 public short getHealthStat() {
 	return healthStat;
 }
@@ -80,7 +90,7 @@ public Short[] getAllStats(){
 
 public String toString(){
 	return name + "'s stats:\n" + "Health: " + healthStat + "\nPhysical Attack: " + physicalAttackStat + "\nEnergy Attack: " + energyAttackStat + 
-			"\nPhysical Defense: " + physicalDefenseStat + "\nEelectttric Defense " + energyDefenseStat + "\n Speed Stat " + speedStat;
+			"\nPhysical Defense: " + physicalDefenseStat + "\nEelectttric Defense " + energyDefenseStat + "\nSpeed Stat " + speedStat;
 
 	
 }
