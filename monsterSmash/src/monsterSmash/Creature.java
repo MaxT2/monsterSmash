@@ -4,7 +4,11 @@ package monsterSmash;
 
 public class Creature {
 	
-private int healthStat;
-private int defenceStat; 
+private short healthStat;
+private short physicalAttackStat;
+private short energyAttackStat;
+private short physicalDefenseStat; 
+private short energyDefenseStat;
+private short speedStat; 
 	
 }
