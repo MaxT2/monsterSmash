@@ -9,6 +9,7 @@ public class CreatureList {
 	Creature waterBuffalo;
 	
 	
+	
 	public CreatureList(){
 	
 	fireBob = new Creature("Fire Bob", 100, 100, 10, 0, 50, 50, 75);
