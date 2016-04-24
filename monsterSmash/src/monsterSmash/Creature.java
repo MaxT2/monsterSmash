@@ -7,6 +7,15 @@ public class Creature {
 
 	private String name;
 	private int healthStat;
+	private int currentHealthStat;
+	public int getCurrentHealthStat() {
+		return currentHealthStat;
+	}
+
+	public void setCurrentHealthStat(int currentHealthStat) {
+		this.currentHealthStat = currentHealthStat;
+	}
+
 	private int physicalAttackStat;
 	private int energyAttackStat;
 	private int physicalDefenseStat; 
