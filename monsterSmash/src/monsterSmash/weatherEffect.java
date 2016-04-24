@@ -14,6 +14,7 @@ public weatherEffect(String weather, double healthMultiplier, double physicalAtt
 	multiplier[3]=physicalDefenseMultiplier;
 	multiplier[4]=energyDefenseMultiplier;
 	multiplier[5]=speedMultiplier;
+	
 }
 
 public String getWeather() {

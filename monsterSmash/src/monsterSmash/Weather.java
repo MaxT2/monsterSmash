@@ -11,6 +11,7 @@ public double[] getMultipliers()
 	if ("rain"==this.condition) 
 	{	weatherEffect rain= new weatherEffect("rain", 2,1,1,1,1,1);
 		return rain.getMultiplier();
+		
 	}
 	
 	if ("solarFlare"==this.condition) 
