@@ -4,13 +4,30 @@ package monsterSmash;
 
 public class Creature {
 	
+	private short healthStat;
 	private short physicalAttackStat;
 	private short energyAttackStat;
 	private short physicalDefenseStat; 
 	private short energyDefenseStat;
 	private short speedStat; 
-	private short healthStat;
 
+
+	public Creature(){
+		
+		
+	}
+	
+	public Creature(short health, short physAtk, short enAtk, short phyDef, short enDef, short speed ){
+		
+		this.healthStat = health;
+		this.physicalAttackStat = physAtk;
+		this.energyAttackStat = enAtk;
+		this.physicalDefenseStat = phyDef;
+		this.energyDefenseStat = enDef;
+		this.speedStat = speed;
+		
+	}
+	
 public short getHealthStat() {
 	return healthStat;
 }
