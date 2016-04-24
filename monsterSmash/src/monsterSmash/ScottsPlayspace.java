@@ -9,6 +9,7 @@ public void sTest(){
 	CreatureList testCreatures = new CreatureList();
 	double attack =1.0*testCreatures.getFireBob().getPhysicalAttackStat()*(testCreatures.getFireBob().getPhysicalAttackStat()/(1.0*testCreatures.getWaterBuffalo().getPhysicalDefenseStat()));
 	System.out.println(attack);
+	
 
 }
 	
