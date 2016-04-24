@@ -8,14 +8,6 @@ public class Creature {
 	private String name;
 	private int healthStat;
 	private int currentHealthStat;
-	public int getCurrentHealthStat() {
-		return currentHealthStat;
-	}
-
-	public void setCurrentHealthStat(int currentHealthStat) {
-		this.currentHealthStat = currentHealthStat;
-	}
-
 	private int physicalAttackStat;
 	private int energyAttackStat;
 	private int physicalDefenseStat; 
@@ -46,6 +38,15 @@ public int getHealthStat() {
 public void setHealthStat(int healthStat) {
 	this.healthStat = healthStat;
 }
+
+public int getCurrentHealthStat() {
+	return currentHealthStat;
+}
+
+public void setCurrentHealthStat(int currentHealthStat) {
+	this.currentHealthStat = currentHealthStat;
+}
+
 public int getPhysicalAttackStat() {
 	return physicalAttackStat;
 }
@@ -76,6 +77,8 @@ public int getSpeedStat() {
 public void setSpeedStat(int speedStat) {
 	this.speedStat = speedStat;
 }
+
+
 
 
 // method to return an array of all creature stats
