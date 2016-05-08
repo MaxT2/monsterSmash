@@ -10,19 +10,47 @@ public class BattleInstance {
 private Weather condition;
 private Boolean endBattleFlag = false;
 
-public BattleInstance(Player one, Player two){
+public BattleInstance(Player active, Player defensive){
 	Scanner in = new Scanner(System.in);
 	
 	while (endBattleFlag == false){
-		System.out.println("What shall we do? \n	1: Attack	2: Run from battle\n");
-		int choiseNum =  in.nextInt();
-		if (choiseNum == 1)
-			this.attack(one.creatureOne,two.creatureOne);
-		else if (choiseNum == 2)
-			this.endBattle();
-		else
-		System.out.println("Not an optoin:");		
+		System.out.println("Welcome to the battle... It is now " + active.getName() + "'s turn");
+		System.out.println("What do you want to do?\n	1: Attack			2: End Turn\n	3:Change active creature	4: Run from battle\n");
+		int choiseNum;
+		
+		try {
+			choiseNum =  in.nextInt();
+			if (choiseNum == 1)
+				this.attack(active.creatureOne,defensive.creatureOne);
+			else if (choiseNum == 2){
+				System.out.println("Player " + active.getName() + "'s turn is over");
+				Player temp = active;
+				active = defensive;
+				defensive = temp;
+				
+			}
+			else if (choiseNum == 3){
+				active.changeActiveCreature();
+				Player temp = active;
+				active = defensive;
+				defensive = temp;
+				
+			}
+			else if (choiseNum == 4)
+				this.endBattle();
+			else
+			System.out.println("Not an option:");		
 
+		
+		}
+		catch (Exception e){
+			System.out.println("Invalid data type, please enter an integer");
+			
+		}
+		
+		
+		
+		
 		
 		
 		

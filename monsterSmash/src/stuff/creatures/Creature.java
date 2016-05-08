@@ -19,6 +19,7 @@ public class Creature {
 	private Move move2;
 	private Move move3;
 	private Move move4;
+	private Boolean isAlive = true;
 
 
 	
@@ -67,6 +68,9 @@ public class Creature {
 		this.speedStat = speed;
 		
 	}
+public String getName(){
+	return name;
+}
 	
 public int getmaxHealthStat() {
 	return maxHealthStat;
@@ -168,9 +172,17 @@ public void setMove4(Move move4) {
 	this.move4 = move4;
 }
 
+public Boolean getIsAlive(){
+	return isAlive;
+}
+
+public void killCreature(){
+	isAlive = false;
+}
+
 public String toString(){
 	return name + "'s stats:\n" + "Health: " + maxHealthStat + "\nPhysical Attack: " + physicalAttackStat + "\nEnergy Attack: " + energyAttackStat + 
-			"\nPhysical Defense: " + physicalDefenseStat + "\nEelectttric Defense " + energyDefenseStat + "\nSpeed Stat " + speedStat;
+			"\nPhysical Defense: " + physicalDefenseStat + "\nEelectttric Defense " + energyDefenseStat + "\nSpeed Stat " + speedStat + "\n\n";
 
 	
 }

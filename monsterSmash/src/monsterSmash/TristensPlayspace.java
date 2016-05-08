@@ -13,10 +13,10 @@ public class TristensPlayspace {
 	public void tTest(){
 		CreatureList localCList = new CreatureList();
 		
-		Player readyPlayerOne = new Player();
+		Player readyPlayerOne = new Player("readyPlayerOne");
 		readyPlayerOne.printPlayerCreatureList();
 		
-		Player readyPlayerTwo = new Player();
+		Player readyPlayerTwo = new Player("readyPlayerTwo");
 		readyPlayerTwo.printPlayerCreatureList();
 		
 		
