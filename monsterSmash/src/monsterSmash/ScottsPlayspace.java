@@ -6,7 +6,7 @@ public class ScottsPlayspace {
 public void sTest(){
 	CreatureList testCreatures = new CreatureList();
 	moveList testMoves = new moveList ();
-	while(battleStop==false)
+	while(battleStop==true)	//SO THAT PROGRAM RUNS ATM
 	{Weather testWeather = new Weather("rain");
 	System.out.println(testWeather.getMultipliers()[0]);
 	double attack =1.0*testCreatures.getFireBob().getPhysicalAttackStat()*(1.0*testCreatures.getFireBob().getPhysicalAttackStat()/(1.0*testCreatures.getWaterBuffalo().getPhysicalDefenseStat()));
