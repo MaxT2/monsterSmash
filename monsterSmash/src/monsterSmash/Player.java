@@ -19,5 +19,16 @@ public class Player {
 	Creature creatureSix = new Creature();	
 	
 	
+public void printPlayerCreatureList(){
+	
+	System.out.println("Players creatures are:\n\n");
+	System.out.println(creatureOne.toString()+"\n");
+	System.out.println(creatureTwo.toString()+"\n");
+	System.out.println(creatureThree.toString()+"\n");
+	System.out.println(creatureFour.toString()+"\n");
+	System.out.println(creatureFive.toString()+"\n");
+	System.out.println(creatureSix.toString()+"\n");
+}
+	
 
 }

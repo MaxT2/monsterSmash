@@ -1,5 +1,7 @@
 package monsterSmash;
 
+import java.util.Scanner;
+
 import stuff.creatures.Creature;
 
 //Object to create for each battle
@@ -7,6 +9,32 @@ import stuff.creatures.Creature;
 public class BattleInstance {
 private Weather condition;
 private Boolean endBattleFlag = false;
+
+public BattleInstance(Player one, Player two){
+	Scanner in = new Scanner(System.in);
+	
+	while (endBattleFlag == false){
+		System.out.println("What shall we do? \n	1: Attack	2: Run from battle\n");
+		int choiseNum =  in.nextInt();
+		if (choiseNum == 1)
+			this.attack(one.creatureOne,two.creatureOne);
+		else if (choiseNum == 2)
+			this.endBattle();
+		else
+		System.out.println("Not an optoin:");		
+
+		
+		
+		
+	} // end battle while
+	
+	in.close();
+	
+	
+	
+}// end of BattleInstance
+
+
 
 public Weather getCondition() {
 	return condition;
