@@ -9,9 +9,9 @@ public class moveList {
 	public moveList ()
 	{
 		wack= new Move("wack",30,20,0.9);
-		wack= new Move("smash",40,20,0.9);
-		wack= new Move("tickle",5,20,0.9);
-		wack= new Move("ram",50,10,0.9);
+		smash= new Move("smash",40,20,0.9);
+		tickle= new Move("tickle",5,20,0.9);
+		ram= new Move("ram",50,10,0.9);
 
 	}
 
