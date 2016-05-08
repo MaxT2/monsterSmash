@@ -1,6 +1,7 @@
 // this is the creature class
 
 package stuff.creatures;
+import java.util.Random;
 
 public class Creature {
 	
@@ -23,6 +24,20 @@ public class Creature {
 	
 	// -------------------- class methods --------------------
 	
+
+	public Creature(){
+	// creates a creature with random stats	
+		Random rand = new Random();
+		this.name = "Random Creature " + rand.nextInt(10);
+		this.maxHealthStat = rand.nextInt(200)+1;
+		this.currentHealthStat = maxHealthStat;
+		this.physicalAttackStat = rand.nextInt(100)+1;
+		this.energyAttackStat = rand.nextInt(100)+1;
+		this.physicalDefenseStat = rand.nextInt(50)+1;
+		this.energyDefenseStat = rand.nextInt(50)+1;
+		this.speedStat = rand.nextInt(99)+1;
+	
+	}	
 	
 	/**
 	 * Creates creature with given stats:
