@@ -15,10 +15,10 @@ public class Creature {
 	private int energyDefenseStat;
 	private int speedStat; 
 	private char creatureType;
-	private String moveName1;
-	private String moveName2;
-	private String moveName3;
-	private String moveName4;
+	private Move move1;
+	private Move move2;
+	private Move move3;
+	private Move move4;
 
 
 	
@@ -28,6 +28,7 @@ public class Creature {
 	public Creature(){
 	// creates a creature with random stats	
 		Random rand = new Random();
+		moveList testMove = new moveList();
 		this.name = "Random Creature " + rand.nextInt(10);
 		this.maxHealthStat = rand.nextInt(200)+1;
 		this.currentHealthStat = maxHealthStat;
@@ -36,7 +37,11 @@ public class Creature {
 		this.physicalDefenseStat = rand.nextInt(50)+1;
 		this.energyDefenseStat = rand.nextInt(50)+1;
 		this.speedStat = rand.nextInt(99)+1;
-	
+		this.move1 = testMove.ram;
+		this.move2=testMove.smash;
+		this.move3=testMove.tickle;
+		this.move4=testMove.wack;
+
 	}	
 	
 	/**
@@ -126,36 +131,41 @@ public int[] getAllStats(){
 
 // to string method for printing out creature stats
 
-public String getMoveName1() {
-	return moveName1;
+
+
+
+
+
+public Move getMove1() {
+	return move1;
 }
 
-public void setMoveName1(String moveName1) {
-	this.moveName1 = moveName1;
+public void setMove1(Move move1) {
+	this.move1 = move1;
 }
 
-public String getMoveName2() {
-	return moveName2;
+public Move getMove2() {
+	return move2;
 }
 
-public void setMoveName2(String moveName2) {
-	this.moveName2 = moveName2;
+public void setMove2(Move move2) {
+	this.move2 = move2;
 }
 
-public String getMoveName3() {
-	return moveName3;
+public Move getMove3() {
+	return move3;
 }
 
-public void setMoveName3(String moveName3) {
-	this.moveName3 = moveName3;
+public void setMove3(Move move3) {
+	this.move3 = move3;
 }
 
-public String getMoveName4() {
-	return moveName4;
+public Move getMove4() {
+	return move4;
 }
 
-public void setMoveName4(String moveName4) {
-	this.moveName4 = moveName4;
+public void setMove4(Move move4) {
+	this.move4 = move4;
 }
 
 public String toString(){
