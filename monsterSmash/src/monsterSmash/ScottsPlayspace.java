@@ -4,10 +4,11 @@ import stuff.creatures.*;
 public class ScottsPlayspace {
 	private boolean battleStop=false;
 public void sTest(){
+	CreatureList testCreatures = new CreatureList();
+	moveList testMoves = new moveList ();
 	while(battleStop==false)
 	{Weather testWeather = new Weather("rain");
 	System.out.println(testWeather.getMultipliers()[0]);
-	CreatureList testCreatures = new CreatureList();
 	double attack =1.0*testCreatures.getFireBob().getPhysicalAttackStat()*(1.0*testCreatures.getFireBob().getPhysicalAttackStat()/(1.0*testCreatures.getWaterBuffalo().getPhysicalDefenseStat()));
 	double attack2 =1.0*testCreatures.getWaterBuffalo().getPhysicalAttackStat()*(testCreatures.getWaterBuffalo().getPhysicalAttackStat()/(1.0*testCreatures.getFireBob().getPhysicalDefenseStat()));
 	System.out.println(attack);
